@@ -20,10 +20,13 @@ $ gh repo create kadai2 --pubilc --source=. --remote=origin --push
 ```
 <p>下の画像がリモートリポジトリを用意したものである。</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 151902" src="https://github.com/user-attachments/assets/eb16a50c-7a4b-438b-be30-6e45e7bfa728" />
-<h4>2.Bがリポジトリをcloneし、作業ブランチを作成。index.htmlを編集してPushし、Aへプルリクエストを出す。</h4>
+<h3>フォークとプルモデル</h3>
 
-```bash
-git clone 
+```text
+
+```
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152033" src="https://github.com/user-attachments/assets/f10f9a36-a739-4dda-bfae-e28330ca69d9" />
+<h4>2.Bがリポジトリをcloneし、作業ブランチを作成。index.htmlを編集してPushし、Aへプルリクエストを出す。</h4>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152540" src="https://github.com/user-attachments/assets/606ca1db-1e2b-47d8-9dbb-efaf96b6ddc0" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152612" src="https://github.com/user-attachments/assets/5d300789-95fd-4a09-91ca-5fe6202db4a7" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152625" src="https://github.com/user-attachments/assets/05e64303-729e-4227-8c88-fd6dfdb643de" />
@@ -36,7 +39,7 @@ git clone
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154239" src="https://github.com/user-attachments/assets/ea9a856a-1029-4d5c-ab16-09d0d6cfc35e" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154246" src="https://github.com/user-attachments/assets/0ab66f7c-3531-49da-93e3-e812d270675b" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154257" src="https://github.com/user-attachments/assets/6b8059bb-a116-47aa-a2ee-468ae6692a41" />
-<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152033" src="https://github.com/user-attachments/assets/f10f9a36-a739-4dda-bfae-e28330ca69d9" />
+
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152046" src="https://github.com/user-attachments/assets/96cdf2f6-441f-450a-b447-e854b719f7fc" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152459" src="https://github.com/user-attachments/assets/87680fa6-0c10-42a2-9e31-909d11636019" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152510" src="https://github.com/user-attachments/assets/b3bd69b4-b2ca-4982-9657-ad1b80dbba74" />
