@@ -33,8 +33,10 @@ $ gh repo create kadai2 --pubilc --source=. --remote=origin --push
 
 5. AのリモートリポジトリをBのユーザーアカウントにコピーがされる。
 ```
-
+<p>下の画像がCreate a new fork画面であり、実行する際の詳細な設定を行うことができる。</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152033" src="https://github.com/user-attachments/assets/f10f9a36-a739-4dda-bfae-e28330ca69d9" />
+<p>下の画像はCreate forkが無事に完了し、Bのアカウントユーザーにkadai2がコピーを行った後である。</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152046" src="https://github.com/user-attachments/assets/96cdf2f6-441f-450a-b447-e854b719f7fc" />
 <h4>2.Bがリポジトリをcloneし、作業ブランチを作成。index.htmlを編集してPushし、Aへプルリクエストを出す。</h4>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152540" src="https://github.com/user-attachments/assets/606ca1db-1e2b-47d8-9dbb-efaf96b6ddc0" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152612" src="https://github.com/user-attachments/assets/5d300789-95fd-4a09-91ca-5fe6202db4a7" />
@@ -49,7 +51,7 @@ $ gh repo create kadai2 --pubilc --source=. --remote=origin --push
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154246" src="https://github.com/user-attachments/assets/0ab66f7c-3531-49da-93e3-e812d270675b" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154257" src="https://github.com/user-attachments/assets/6b8059bb-a116-47aa-a2ee-468ae6692a41" />
 
-<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152046" src="https://github.com/user-attachments/assets/96cdf2f6-441f-450a-b447-e854b719f7fc" />
+
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152459" src="https://github.com/user-attachments/assets/87680fa6-0c10-42a2-9e31-909d11636019" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152510" src="https://github.com/user-attachments/assets/b3bd69b4-b2ca-4982-9657-ad1b80dbba74" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152526" src="https://github.com/user-attachments/assets/1a44d83f-3fd4-4fb4-b729-2b5266366867" />
