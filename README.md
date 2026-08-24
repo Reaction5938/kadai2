@@ -1,3 +1,10 @@
+<h1>演習課題(フォークとプルモデル)</h1>
+<h2>概要</h2>
+<P>演習課題の手順に沿ってリポジトリの作成を行った。</P>
+<p>kadai2のリポジトリでは、フォークとプルモデルでのモデルを使用し、役割分担を行った。</p>
+<h2>役割分担</h2>
+<p><strong>🔴A：リード役（石井 陸登)</strong></p>
+<p>B: 開発者(檀上 蒼也)</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 151902" src="https://github.com/user-attachments/assets/eb16a50c-7a4b-438b-be30-6e45e7bfa728" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152540" src="https://github.com/user-attachments/assets/606ca1db-1e2b-47d8-9dbb-efaf96b6ddc0" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152612" src="https://github.com/user-attachments/assets/5d300789-95fd-4a09-91ca-5fe6202db4a7" />
