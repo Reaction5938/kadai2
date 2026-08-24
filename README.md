@@ -4,8 +4,26 @@
 <p>kadai2のリポジトリでは、フォークとプルモデルでのモデルを使用し、役割分担を行った。</p>
 <h2>役割分担</h2>
 <p><strong>🔴A：リード役（石井 陸登)</strong></p>
-<p>B: 開発者(檀上 蒼也)</p>
+<p><strong>🔵B: 開発者(檀上 蒼也)</strong></p>
+<h3>手順</h3>
+<h4>1.AがGitHub上にリモートリポジトリを用意し、index.html（"Hello"と記述）をmainブランチにPushする</h4>
+<p>ここでは、ターミナルでリモートリポジトリを制作し、GitとGitHubの連携の確認を行った。</p>
+
+```bash
+$ mkdir kadai2
+$ cd kadai2
+$ git init
+$ echo "# kadai2" >> README.md
+$ git add .
+$ git commit -m "new index.html"
+$ gh repo create kadai2 --pubilc --source=. --remote=origin --push
+```
+<p>下の画像がリモートリポジトリを用意したものである。</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 151902" src="https://github.com/user-attachments/assets/eb16a50c-7a4b-438b-be30-6e45e7bfa728" />
+<h4>2.Bがリポジトリをcloneし、作業ブランチを作成。index.htmlを編集してPushし、Aへプルリクエストを出す。</h4>
+
+```bash
+git clone 
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152540" src="https://github.com/user-attachments/assets/606ca1db-1e2b-47d8-9dbb-efaf96b6ddc0" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152612" src="https://github.com/user-attachments/assets/5d300789-95fd-4a09-91ca-5fe6202db4a7" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152625" src="https://github.com/user-attachments/assets/05e64303-729e-4227-8c88-fd6dfdb643de" />
