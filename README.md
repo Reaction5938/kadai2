@@ -38,6 +38,27 @@ $ gh repo create kadai2 --pubilc --source=. --remote=origin --push
 <p>下の画像はCreate forkが無事に完了し、Bのアカウントユーザーにkadai2がコピーを行った後である。</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152046" src="https://github.com/user-attachments/assets/96cdf2f6-441f-450a-b447-e854b719f7fc" />
 <h4>2.Bがリポジトリをcloneし、作業ブランチを作成。index.htmlを編集してPushし、Aへプルリクエストを出す。</h4>
+<p>無事にコピーを完了した後にターミナルでリポジトリをcloneし、作業ブランチを作成した所でviコマンドでindex.htmlを編集、addとcommitコマンド使用した後、Aのユーザーに編集したindex.htmlをプルリクエストを出す。</p>
+
+```bash
+$ git clone git@github.com:Bのユーザー名/kadai2.git
+$ cd kadai2
+$ git switch -c tejun2
+$ vi index.html
+
+編集前のindex.html
+Hello
+
+編集後のindex.html
+Hello
+Hello
+
+:wqで保存して終了。
+
+$ git add index.html
+$ git commit -m "Add index.html"
+$ git push origin tejun2
+```
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152540" src="https://github.com/user-attachments/assets/606ca1db-1e2b-47d8-9dbb-efaf96b6ddc0" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152612" src="https://github.com/user-attachments/assets/5d300789-95fd-4a09-91ca-5fe6202db4a7" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152625" src="https://github.com/user-attachments/assets/05e64303-729e-4227-8c88-fd6dfdb643de" />
