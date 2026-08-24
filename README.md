@@ -20,11 +20,20 @@ $ gh repo create kadai2 --pubilc --source=. --remote=origin --push
 ```
 <p>下の画像がリモートリポジトリを用意したものである。</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 151902" src="https://github.com/user-attachments/assets/eb16a50c-7a4b-438b-be30-6e45e7bfa728" />
-<h3>フォークとプルモデル</h3>
+<h3>フォークのやり方</h3>
 
 ```text
+1. 🔍Type / to searshを押す。
 
+2. Aのユーザー名を検索する。
+
+3. Aが作成したリモートリポジトリをクリックし、Forkボタンをクリックする。
+
+4. Create a new fork画面で、Owner *(Bのユーザー名) / Repository name *(リモートリポジトリ名はそのまま)でCreate forkをクリックする。
+
+5. AのリモートリポジトリをBのユーザーアカウントにコピーがされる。
 ```
+
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152033" src="https://github.com/user-attachments/assets/f10f9a36-a739-4dda-bfae-e28330ca69d9" />
 <h4>2.Bがリポジトリをcloneし、作業ブランチを作成。index.htmlを編集してPushし、Aへプルリクエストを出す。</h4>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152540" src="https://github.com/user-attachments/assets/606ca1db-1e2b-47d8-9dbb-efaf96b6ddc0" />
