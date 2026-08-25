@@ -16,7 +16,7 @@ $ git init
 $ echo "# kadai2" >> README.md
 $ git add .
 $ git commit -m "new index.html"
-$ gh repo create kadai2 --pubilc --source=. --remote=origin --push
+$ gh repo create kadai2 --public --source=. --remote=origin --push
 ```
 <p>下の画像がリモートリポジトリを用意したものである。</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 151902" src="https://github.com/user-attachments/assets/eb16a50c-7a4b-438b-be30-6e45e7bfa728" />
