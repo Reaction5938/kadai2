@@ -172,7 +172,7 @@ $ git push origin tejun2
 ```
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152612" src="https://github.com/user-attachments/assets/5d300789-95fd-4a09-91ca-5fe6202db4a7" />
 <p>下の画像がマージの処理が正常に終了、mainブランチに統合した状態となる。</p>
-
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152625" src="https://github.com/user-attachments/assets/1dd57dd4-406d-475e-a9ca-96351a46875a" />
 <h4>4. Aがローカルのmainブランチを最新化（pull）し、作業ブランチを作成。index.htmlを編集してPRを作成・マージする。</h4>
 <p>次にAのユーザーが、ターミナル上で、mainブランチを最新化した後、新しいブランチを作成する。</p>
 <p>新しいブランチの中で、viコマンドを使用し、index.htmlを編集していき、Aのユーザー自身でプルリクエストとマージを行う。</p>
