@@ -96,7 +96,6 @@ $ git push origin tejun2
 ```
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152612" src="https://github.com/user-attachments/assets/5d300789-95fd-4a09-91ca-5fe6202db4a7" />
 <p>下の画像がマージの処理が正常に終了、mainブランチに統合したこある。</p>
-<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 151902" src="https://github.com/user-attachments/assets/eb16a50c-7a4b-438b-be30-6e45e7bfa728" />
 <h3>フォークのやり方</h3>
 
 ```text
