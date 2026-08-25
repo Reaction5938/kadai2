@@ -59,13 +59,27 @@ Hello
 Hello
 ```
 <p>:wqで保存して終了。</p>
-<p>編集したindex.htmlをaddとcommitコマンドを使用、</p>
+<p>編集したindex.htmlをaddとcommitコマンドを使用後、pushコマンドでAのユーザーにプルリクエストを出す。</p>
 
 ```bash
 $ git add index.html
 $ git commit -m "Add index.html"
 $ git push origin tejun2
 ```
+<p>この下の画像がターミナルで正常にpushコマンドが処理された状態である。</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152459" src="https://github.com/user-attachments/assets/87680fa6-0c10-42a2-9e31-909d11636019" />
+<h3>プルリクエストのやり方</h3>
+
+```text
+1. Code画面で、Compare & pull requestボタンを押す。
+
+2. Open a pull requestが表示され、Create pull requestを押す。
+```
+<p>この下の画像がOpen a pull request画面である。</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152510" src="https://github.com/user-attachments/assets/b3bd69b4-b2ca-4982-9657-ad1b80dbba74" />
+<p>そして下の画像が、承認を待つ状態である</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152526" src="https://github.com/user-attachments/assets/1a44d83f-3fd4-4fb4-b729-2b5266366867" />
+
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152540" src="https://github.com/user-attachments/assets/606ca1db-1e2b-47d8-9dbb-efaf96b6ddc0" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152612" src="https://github.com/user-attachments/assets/5d300789-95fd-4a09-91ca-5fe6202db4a7" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152625" src="https://github.com/user-attachments/assets/05e64303-729e-4227-8c88-fd6dfdb643de" />
@@ -80,8 +94,8 @@ $ git push origin tejun2
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154257" src="https://github.com/user-attachments/assets/6b8059bb-a116-47aa-a2ee-468ae6692a41" />
 
 
-<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152459" src="https://github.com/user-attachments/assets/87680fa6-0c10-42a2-9e31-909d11636019" />
-<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152510" src="https://github.com/user-attachments/assets/b3bd69b4-b2ca-4982-9657-ad1b80dbba74" />
-<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152526" src="https://github.com/user-attachments/assets/1a44d83f-3fd4-4fb4-b729-2b5266366867" />
+
+
+
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154203" src="https://github.com/user-attachments/assets/fc30f778-098c-4f28-a675-973d76397458" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154213" src="https://github.com/user-attachments/assets/ad36f348-969a-412d-8e7c-b69f117f19a6" />
