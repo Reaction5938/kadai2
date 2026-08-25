@@ -77,12 +77,137 @@ $ git push origin tejun2
 ```
 <p>この下の画像がOpen a pull request画面である。</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152510" src="https://github.com/user-attachments/assets/b3bd69b4-b2ca-4982-9657-ad1b80dbba74" />
-<p>そして下の画像が、承認を待つ状態である</p>
+<p>そして下の画像が、プルダウンの承認を待つ状態である</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152526" src="https://github.com/user-attachments/assets/1a44d83f-3fd4-4fb4-b729-2b5266366867" />
+<h3>Merge(マージ)のやり方</h3>
+<h4>3. AがBのプルリクエストをレビューし、mainブランチにマージする。</h4>
 
+```text
+1. リモートリポジトリ内のPull requestsを押す。
+
+2. Bが作成したプルリクエストをクリックする。
+```
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152540" src="https://github.com/user-attachments/assets/606ca1db-1e2b-47d8-9dbb-efaf96b6ddc0" />
+
+```text
+3. クリック後、No conflicts with base branchにある、Merge pull requestボタンを押す
+
+4. Commit messageが表示され、Confirm mergeボタンを押す。
+```
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152612" src="https://github.com/user-attachments/assets/5d300789-95fd-4a09-91ca-5fe6202db4a7" />
+<p>下の画像がマージの処理が正常に終了、mainブランチに統合したこある。</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 151902" src="https://github.com/user-attachments/assets/eb16a50c-7a4b-438b-be30-6e45e7bfa728" />
+<h3>フォークのやり方</h3>
+
+```text
+1. 🔍Type / to searshを押す。
+
+2. Aのユーザー名を検索する。
+
+3. Aが作成したリモートリポジトリをクリックし、Forkボタンをクリックする。
+
+4. Create a new fork画面で、Owner *(Bのユーザー名) / Repository name *(リモートリポジトリ名はそのまま)でCreate forkをクリックする。
+
+5. AのリモートリポジトリをBのユーザーアカウントにコピーがされる。
+```
+<p>下の画像がCreate a new fork画面であり、実行する際の詳細な設定を行うことができる。</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152033" src="https://github.com/user-attachments/assets/f10f9a36-a739-4dda-bfae-e28330ca69d9" />
+<p>下の画像はCreate forkが無事に完了し、Bのアカウントユーザーにkadai2がコピーを行った後である。</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152046" src="https://github.com/user-attachments/assets/96cdf2f6-441f-450a-b447-e854b719f7fc" />
+<h4>2.Bがリポジトリをcloneし、作業ブランチを作成。index.htmlを編集してPushし、Aへプルリクエストを出す。</h4>
+<p>無事にコピーを完了した後にターミナルでリポジトリをcloneし、作業ブランチを作成した所でviコマンドでindex.htmlを編集、addとcommitコマンド使用した後、Aのユーザーに編集したindex.htmlをプルリクエストを出す。</p>
+<p>まずはcloneし、ターミナル上でリモートリポジトリをコピーする</p>
+
+```bash
+$ git clone git@github.com:Bのユーザー名/kadai2.git
+$ cd kadai2
+$ git switch -c tejun2
+$ vi index.html
+```
+<p>viコマンド編集前のindex.html</p>
+
+```text
+Hello
+```
+<p>viコマンド編集後のindex.html</p>
+
+```text
+Hello
+Hello
+```
+<p>これはHelloの下にHelloを追加した後、:wqで保存して終了。</p>
+<p>編集したindex.htmlをaddとcommitコマンドを使用後、pushコマンドでリモートリポジトリにアップロードする。</p>
+
+```bash
+$ git add index.html
+$ git commit -m "Add index.html"
+$ git push origin tejun2
+```
+<p>この下の画像がターミナルで正常にpushコマンドが処理された状態である。</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152459" src="https://github.com/user-attachments/assets/87680fa6-0c10-42a2-9e31-909d11636019" />
+<h3>プルリクエストのやり方</h3>
+
+```text
+1. Code画面で、Compare & pull requestボタンを押す。
+
+2. Open a pull requestが表示され、Create pull requestを押す。
+```
+<p>この下の画像がOpen a pull request画面である。</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152510" src="https://github.com/user-attachments/assets/b3bd69b4-b2ca-4982-9657-ad1b80dbba74" />
+<p>そして下の画像が、プルダウンの承認を待つ状態である</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152526" src="https://github.com/user-attachments/assets/1a44d83f-3fd4-4fb4-b729-2b5266366867" />
+<h3>Merge(マージ)のやり方</h3>
+<h4>3. AがBのプルリクエストをレビューし、mainブランチにマージする。</h4>
+
+```text
+1. リモートリポジトリ内のPull requestsを押す。
+
+2. Bが作成したプルリクエストをクリックする。
+```
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152540" src="https://github.com/user-attachments/assets/606ca1db-1e2b-47d8-9dbb-efaf96b6ddc0" />
+
+```text
+3. クリック後、No conflicts with base branchにある、Merge pull requestボタンを押す
+
+4. Commit messageが表示され、Confirm mergeボタンを押す。
+```
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152612" src="https://github.com/user-attachments/assets/5d300789-95fd-4a09-91ca-5fe6202db4a7" />
+<p>下の画像がマージの処理が正常に終了、mainブランチに統合した状態となる。</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152625" src="https://github.com/user-attachments/assets/05e64303-729e-4227-8c88-fd6dfdb643de" />
+<h4>4. Aがローカルのmainブランチを最新化（pull）し、作業ブランチを作成。index.htmlを編集してPRを作成・マージする。</h4>
+<p>次にAのユーザーが、ターミナル上で、mainブランチを最新化した後、新しいブランチを作成する。</p>
+<p>新しいブランチの中で、viコマンドを使用し、index.htmlを編集していき、Aのユーザー自身でプルリクエストとマージを行う。</p>
+<p>まずは、mainブランチの最新化と作業ブランチの作成</p>
+
+```bash
+$ git pull origin main
+$ git switch -c  tejun4
+```
+<p>次にviコマンドによるindex.htmlの編集</p>
+
+```bash
+$ vi index.html
+```
+<p>vi編集前のindex.html</p>
+
+```text
+Hello
+Hello
+```
+<p>vi編集後のindex.html</p>
+
+```text
+Hello!
+Hello!
+```
+<p>ここでは、Helloの末尾に!を追加し、:wqで保存して終了。</p>
+<p>次に、addとcommitコマンドを実行した後、pushコマンドでアップロードする。</p>
+
+```bash
+$ git add index.html
+$ git commit -m "Add index.html"
+$ git push origin tejen4
+```
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153259" src="https://github.com/user-attachments/assets/48ad752e-ad29-41e0-862c-05183b5c4932" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153307" src="https://github.com/user-attachments/assets/c6bded33-257e-4521-a0c9-9d73d413fb77" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153319" src="https://github.com/user-attachments/assets/e13ea27e-1f58-4280-a474-5f9a2f32b42f" />
