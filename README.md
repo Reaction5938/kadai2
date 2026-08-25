@@ -4,7 +4,7 @@
 <p>kadai2のリポジトリでは、フォークとプルモデルでのモデルを使用し、役割分担を行った。</p>
 <h2>役割分担</h2>
 <p><strong>🔴A：リード役（石井 陸登)</strong></p>
-<p><strong>🔵B: 開発者(檀上 蒼也)</strong></p>
+<p><strong>🔵B: 開発者 (檀上 蒼也)</strong></p>
 <h3>手順</h3>
 <h4>1.AがGitHub上にリモートリポジトリを用意し、index.html（"Hello"と記述）をmainブランチにPushする</h4>
 <p>ここでは、ターミナルでリモートリポジトリを制作し、GitとGitHubの連携の確認を行った。</p>
@@ -39,22 +39,29 @@ $ gh repo create kadai2 --public --source=. --remote=origin --push
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152046" src="https://github.com/user-attachments/assets/96cdf2f6-441f-450a-b447-e854b719f7fc" />
 <h4>2.Bがリポジトリをcloneし、作業ブランチを作成。index.htmlを編集してPushし、Aへプルリクエストを出す。</h4>
 <p>無事にコピーを完了した後にターミナルでリポジトリをcloneし、作業ブランチを作成した所でviコマンドでindex.htmlを編集、addとcommitコマンド使用した後、Aのユーザーに編集したindex.htmlをプルリクエストを出す。</p>
+<p>まずはcloneし、ターミナル上でリモートリポジトリをコピーする</p>
 
 ```bash
 $ git clone git@github.com:Bのユーザー名/kadai2.git
 $ cd kadai2
 $ git switch -c tejun2
 $ vi index.html
+```
+<p>viコマンド編集前のindex.html</p>
 
-編集前のindex.html
+```text
 Hello
+```
+<p>viコマンド編集後のindex.html</p>
 
-編集後のindex.html
+```text
 Hello
 Hello
+```
+<p>:wqで保存して終了。</p>
+<p>編集したindex.htmlをaddとcommitコマンドを使用、</p>
 
-:wqで保存して終了。
-
+```bash
 $ git add index.html
 $ git commit -m "Add index.html"
 $ git push origin tejun2
