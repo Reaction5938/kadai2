@@ -14,6 +14,7 @@ $ mkdir kadai2
 $ cd kadai2
 $ git init
 $ echo "# kadai2" >> README.md
+$ echo "Hello" >> index.html
 $ git add .
 $ git commit -m "new index.html"
 $ gh repo create kadai2 --public --source=. --remote=origin --push
