@@ -173,7 +173,7 @@ $ git push origin tejun2
 ```
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152612" src="https://github.com/user-attachments/assets/5d300789-95fd-4a09-91ca-5fe6202db4a7" />
 <p>下の画像がマージの処理が正常に終了、mainブランチに統合した状態となる。</p>
-<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 152625" src="https://github.com/user-attachments/assets/05e64303-729e-4227-8c88-fd6dfdb643de" />
+
 <h4>4. Aがローカルのmainブランチを最新化（pull）し、作業ブランチを作成。index.htmlを編集してPRを作成・マージする。</h4>
 <p>次にAのユーザーが、ターミナル上で、mainブランチを最新化した後、新しいブランチを作成する。</p>
 <p>新しいブランチの中で、viコマンドを使用し、index.htmlを編集していき、Aのユーザー自身でプルリクエストとマージを行う。</p>
@@ -208,7 +208,13 @@ $ git add index.html
 $ git commit -m "Add index.html"
 $ git push origin tejen4
 ```
+<p>下の画像はBの操作と同じくpushの処理が無事に完了した状態である。</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153259" src="https://github.com/user-attachments/assets/48ad752e-ad29-41e0-862c-05183b5c4932" />
+<p>次にプルリクエストを作成した後に、マージを行い、mainブランチの統合を行う。</p>
+
+```text
+1. Bのユーザーと同じくCode画面で
+```
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153307" src="https://github.com/user-attachments/assets/c6bded33-257e-4521-a0c9-9d73d413fb77" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153319" src="https://github.com/user-attachments/assets/e13ea27e-1f58-4280-a474-5f9a2f32b42f" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153326" src="https://github.com/user-attachments/assets/ba1d64b4-976f-4a4b-afff-9cd297bbdc20" />
