@@ -229,14 +229,38 @@ $ git push origin tejen4
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153326" src="https://github.com/user-attachments/assets/ba1d64b4-976f-4a4b-afff-9cd297bbdc20" />
 <p>下の画像が無事にマージまで行い、mainブランチに統合した状態である。</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153335" src="https://github.com/user-attachments/assets/92689ca6-56dd-4eb9-b756-61777e88383e" />
-<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154228" src="https://github.com/user-attachments/assets/5ac5e784-9d5d-4d5f-917d-dbf194fc4ccc" />
-<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154239" src="https://github.com/user-attachments/assets/ea9a856a-1029-4d5c-ab16-09d0d6cfc35e" />
-<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154246" src="https://github.com/user-attachments/assets/0ab66f7c-3531-49da-93e3-e812d270675b" />
-<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154257" src="https://github.com/user-attachments/assets/6b8059bb-a116-47aa-a2ee-468ae6692a41" />
+<h4>5. Bがローカルのmainブランチを最新化（pull）し、作業ブランチを作成。stylesheet.cssを追加してAへプルリクエストを出す。</h4>
+<p>4.でAが行っていたmainブランチの最新化をBのユーザーが行い、その後に新しい作業ブランチを作成する。</p>
 
+```bash
+$ git pull origin main
+$ git switch -c tejun5
+```
+<p>次に、新しい作業ブランチ内でechoコマンドでstylesheet.cssを追加し、addとcommitコマンドで行い、pushコマンドでアップロードしていく。</p>
 
+```bash
+$ echo "" >> stylesheet.css
+$ git add stylesheet.css
+$ git commit -m "Create stylesheet.css"
+$ git push origin tejun5
+```
+<p>その後、アップロードしたstylesheet.cssをプルリクエストをする操作を行う。</p>
 
+```text
+1. Code画面で、Compare & pull requestボタンを押す。
 
-
+2. Open a pull requestが表示され、Create pull requestを押す。
+```
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154203" src="https://github.com/user-attachments/assets/fc30f778-098c-4f28-a675-973d76397458" />
+<p>下の画像がプルリクエストを終え、マージの承認待ちの状態である。</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154213" src="https://github.com/user-attachments/assets/ad36f348-969a-412d-8e7c-b69f117f19a6" />
+<h4>6. AがBのプルリクエストをレビューし、mainブランチにマージする。</h4>
+<p>Bがプルリクエストした内容をAが確認を行い、マージを行う。</p>
+<p>下の画像では、Bが作ったプルリクエストが表示されている状態</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154228" src="https://github.com/user-attachments/assets/5ac5e784-9d5d-4d5f-917d-dbf194fc4ccc" />
+<p>次に、プルリクエストをクリックし、Merge pull requestボタンを押す。</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154239" src="https://github.com/user-attachments/assets/ea9a856a-1029-4d5c-ab16-09d0d6cfc35e" />
+<p>Merge pull requestボタンを押した後、Commit messageを確認しConfirm mergeボタンを押す。</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154246" src="https://github.com/user-attachments/assets/0ab66f7c-3531-49da-93e3-e812d270675b" />
+<p>無事にマージが実行され、下の画像になったら、演習課題の手順である、1～6までの手順を無事に完了したこととなる。</p>
+<img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154257" src="https://github.com/user-attachments/assets/6b8059bb-a116-47aa-a2ee-468ae6692a41" />
