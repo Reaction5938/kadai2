@@ -212,11 +212,22 @@ $ git push origin tejen4
 <p>次にプルリクエストを作成した後に、マージを行い、mainブランチの統合を行う。</p>
 
 ```text
-1. Bのユーザーと同じくCode画面で
+1. Bのユーザーと同じくCode画面でCompare & pull requestボタンを押す。
+
+2. Open a pull requestが表示され、Create pull requestを押す。
 ```
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153307" src="https://github.com/user-attachments/assets/c6bded33-257e-4521-a0c9-9d73d413fb77" />
+
+```text
+3. クリック後、No conflicts with base branchにある、Merge pull requestボタンを押す
+```
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153319" src="https://github.com/user-attachments/assets/e13ea27e-1f58-4280-a474-5f9a2f32b42f" />
+
+```text
+4. 4. Commit messageが表示され、Confirm mergeボタンを押す。
+```
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153326" src="https://github.com/user-attachments/assets/ba1d64b4-976f-4a4b-afff-9cd297bbdc20" />
+<p>下の画像が無事にマージまで行い、mainブランチに統合した状態である。</p>
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 153335" src="https://github.com/user-attachments/assets/92689ca6-56dd-4eb9-b756-61777e88383e" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154228" src="https://github.com/user-attachments/assets/5ac5e784-9d5d-4d5f-917d-dbf194fc4ccc" />
 <img width="1920" height="1032" alt="スクリーンショット 2026-08-24 154239" src="https://github.com/user-attachments/assets/ea9a856a-1029-4d5c-ab16-09d0d6cfc35e" />
